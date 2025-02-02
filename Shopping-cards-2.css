@@ -1,0 +1,356 @@
+/*******************************
+I STYLE HERE THE TESTIMONIAL-SECTION */
+.testimonials-section {
+  background-color: #fdf2e9;
+  padding: 8rem;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  gap: 4rem;
+  align-items: center;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 7rem;
+  display: inline-block;
+  margin-bottom: 1.3rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 1.6rem;
+  letter-spacing: -0.4px;
+}
+.testimonial-author {
+  font-size: 1.6rem;
+  color: #555;
+  margin-bottom: 4rem;
+}
+.gallery-image {
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1.6rem;
+  transition: 0.3s;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery img:hover {
+  transform: rotate(10deg);
+}
+/*******************************
+TESTIMONIAL SECTION ENDS HERE */
+
+/**********************************
+I STYLE HERE THE PRICING-SECTION */
+.pricing-section {
+  padding: 4rem 8rem 4rem 8rem;
+  max-width: 120rem;
+  margin: 80px auto;
+}
+.pricing-container {
+  padding: 4.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.pricing-plan {
+  border-radius: 1rem;
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+}
+.starter--plan {
+  border: 3px solid #fdf2e9;
+}
+.complete--plan {
+  background-color: #fdf2e9;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.211);
+  overflow: hidden;
+}
+.complete--plan::after {
+  content: "best-deal";
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: #b83a66;
+  color: #fff;
+  padding: 1rem 4.6rem;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 25px;
+  right: -51px;
+  transform: rotate(45deg);
+}
+
+.plan-title {
+  font-size: 2rem;
+  color: #cf711f;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.plan-price {
+  font-size: 6.2rem;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+.price-header {
+  margin-bottom: 4.4rem;
+}
+.dollars {
+  width: 2.6rem;
+  align-self: flex-end;
+}
+.plan-text {
+  font-size: 1.6rem;
+  color: #555;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.meal-icon {
+  color: #cf711f;
+}
+
+.pricing-btn {
+  background-color: #e67e22;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+  transition: all 0.4s;
+  margin-top: 7rem;
+}
+.btn.btn--starter:visited,
+.btn.btn--starter:link {
+  background-color: #eb984e;
+}
+.btn.btn--starter:hover,
+.btn.btn--starter:active {
+  background-color: #8a4c14;
+}
+/**********************************
+PRICING SECTION END 
+
+
+
+FEATURES SECTION AND GRID STARTS*/
+.pricing-text {
+  margin: 2.6rem 0 6rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #555;
+}
+.features-grid {
+  max-width: 120rem;
+  padding: 4rem 8rem 4rem 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5rem;
+}
+.figure-34em {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.features-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.features-text {
+  font-size: 1.8rem;
+  color: #555;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-top: 1.2rem;
+}
+.features-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  padding: 1.6rem;
+}
+/* FEATURES SECTION AND GRID ENDS*/
+/**********************************
+
+/*****************************
+CTA-SECTION STARTS HERE */
+.container {
+  padding-bottom: 4rem;
+  max-width: 120rem;
+  margin: 80px auto;
+}
+.cta-grid *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.563);
+}
+.cta-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #eea564, #e67e22);
+  box-shadow: 0 0 30px 4px rgba(0, 0, 0, 0.2);
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+.cta-image {
+  background-image: linear-gradient(
+      rgba(235, 155, 78, 0.351),
+      rgba(230, 125, 34, 0.303)
+    ),
+    url(eating.jpg);
+  background-size: cover;
+}
+
+.cta-text {
+  font-size: 1.6rem;
+  color: #45260a;
+  margin-bottom: 4.2rem;
+}
+.cta--secondary--heading {
+  color: #45260a;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 2.4rem;
+  color: #45260a;
+}
+.cta-form label {
+  font-size: 1.6rem;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input {
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  font-family: inherit;
+  color: inherit;
+}
+.cta-form select {
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  font-family: inherit;
+  color: #777;
+}
+.btn-form {
+  font-size: 1.8rem;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  border: none;
+  font-family: inherit;
+  background-color: #45260a;
+  color: #fff;
+  align-self: end;
+}
+.btn-form:hover {
+  background-color: #fff;
+  color: #777;
+  cursor: pointer;
+}
+/*****************************
+CTA-SECTION ENDS HERE */
+
+/*****************************
+I STYLE HERE THE FOOTER-SECTION */
+.footer {
+  width: 75%;
+  margin: 0 auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.076);
+}
+.grid-footer {
+  max-width: 120rem;
+  margin: 80px auto;
+  padding: 5.5rem 0 4rem 0;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  gap: 4rem;
+}
+
+.footer-logo {
+  height: 2.2rem;
+  margin-bottom: 2.2rem;
+}
+.logo-column {
+  display: flex;
+  flex-direction: column;
+}
+.logo-column .copyright {
+  margin-top: 5rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  color: #555;
+}
+.adress {
+  font-size: 1.4rem;
+  color: #555;
+}
+.footer-list {
+  font-size: 1.6rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #555;
+  line-height: 1.3;
+}
+.footer-link {
+  text-decoration: none;
+  display: block;
+  color: #555;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+.contact {
+  margin-top: 3rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.footer-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #777;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: #555;
+}

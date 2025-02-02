@@ -1,0 +1,762 @@
+/* First Media Query 
+
+/*************************
+Smaller Desktops (laptops) 
+       Below 1345px 
+**************************/
+
+@media (max-width: 84em) {
+  html {
+    font-size: 57%;
+  }
+}
+
+/*************************
+Smaller Desktops (Tablets, High-End Smartphones landscape view-port) 
+       Below 1185px 
+**************************/
+
+@media (max-width: 74em) {
+  html {
+    font-size: 50%;
+  }
+
+  .app-screen-image {
+    width: 35%;
+  }
+  .complete--plan::after {
+    top: 20px;
+    right: -37px;
+  }
+}
+
+/*************************
+Tablets, Smaller Laptops (Tablets, High-End Smartphones landscape view-port) 
+       Below 1040px 
+**************************/
+@media (max-width: 65em) {
+  html {
+    font-size: 44%;
+  }
+
+  body {
+    font-size: 44%;
+  }
+
+  .complete--plan::after {
+    top: 20px;
+    right: -37px;
+  }
+}
+
+/*************************
+Smaller Tablets, (Tablets, High-End Smartphones landscape view-port) 
+  Below 960px (Start adjusting the website in Single-layer columns)
+**************************/
+@media (max-width: 60em) {
+  /******************/
+  /*Navigation-Section*/
+
+  /********************
+      Hero Section*/
+  /********************/
+
+  .hero-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .main-heading {
+    text-align: center;
+    font-size: 4.4rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    margin-left: 25%;
+    margin-top: 3rem;
+  }
+
+  .flex-pictures-container {
+    justify-content: center;
+  }
+
+  .hero-grid-container {
+    max-width: 80rem;
+    gap: 2rem;
+  }
+  /********************
+      Hero-Section end*/
+  /********************/
+
+  /************
+  How it Works Section*/
+  /************/
+  .section-how {
+    padding: 2rem 6rem;
+  }
+  /************
+    How it Works Section end*/
+  /************
+  
+  
+  
+  
+  /*********
+    Meals-Section*/
+  /**********/
+  .meals-section {
+    padding: 2rem 6rem 2rem 6rem;
+  }
+  /*********
+    Meals-Section end*/
+  /**********/
+
+  /************
+  Testimonials-Section + Gallery-Section
+  /************/
+  .testimonials-section {
+    grid-template-columns: 1fr;
+    gap: 8rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  /************
+  Testimonials-Section + Gallery-Section End
+  /************/
+
+  /******************
+    Pricing-Section*/
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .starter--plan,
+  .complete--plan {
+    justify-self: center;
+  }
+
+  .complete--plan::after {
+    top: 20px;
+    right: -37px;
+  }
+
+  /*************
+  Features Section 
+  /**************/
+  .flex-image-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .features-grid {
+    justify-items: center;
+    align-items: center;
+    padding: 2rem 4rem 2rem 4rem;
+  }
+
+  /*************
+  Features Section End
+  /**************/
+
+  /**********
+  CTA-Section
+  ***********/
+  .cta-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-form {
+    margin-top: 2rem;
+  }
+
+  .cta-section {
+    padding: 0rem 5rem 0 5rem;
+  }
+  /**********
+  CTA-Section End
+  ***********/
+
+  /*************
+  Footer-Section*/
+  /*************/
+
+  /***********
+  (Changing the Nav)  For Mobile-screens 
+  ***********/
+  .main-nav {
+    background-color: #ffffff8a;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+    transform: translateX(100%);
+
+    /***********
+     I have to hide the main-nav*/
+    /**************
+      Step-1 hide it visually*/
+    opacity: 0;
+
+    /**************
+      Step-2 Make the navigation unaccessable to keayboard and mouse */
+    pointer-events: none;
+
+    /***********
+      Step-3 Hide the navigation from screen-readers*/
+    visibility: hidden;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .main-nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-mobile-navigation-close {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-navigation-close {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-navigation-menu {
+    display: none;
+  }
+}
+
+/*************************
+  Tablets, (High-End Smartphones landscape view-port) 
+  Below 706px 
+**************************/
+
+@media (max-width: 44em) {
+  /********************
+      Hero Section*/
+  /********************/
+  .flex-pictures-container {
+    margin-top: 6rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    margin-top: 1.5rem;
+  }
+  /********************
+      Hero Section End */
+  /********************/
+
+  /********************
+      Featured-in Section/
+  /********************/
+  .flex-image-container {
+    max-width: 80rem;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row: auto auto;
+    column-gap: 2rem;
+    row-gap: 5rem;
+  }
+
+  .logo-image-1 {
+    grid-column: span 3;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .logo-image-2 {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  .featured-in-title {
+    font-size: 1.6rem;
+  }
+
+  .usa-today {
+    grid-column: 1 / 3;
+  }
+  /********************
+    Featured-in Section End /
+  /********************/
+
+  /********************
+    Testimonials Section /
+  /********************/
+  .testimonial-text {
+    line-height: 1.2;
+  }
+  /********************
+    Testimonials Section End /
+  /********************/
+
+  /********************
+    Features-Section /
+  /********************/
+  .features-grid {
+    padding: 2rem 4rem 2rem 4rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .features-text {
+    margin-top: -1rem;
+  }
+
+  .features-icon {
+    margin-bottom: 1.5rem;
+  }
+  /********************
+    Features-Section End /
+  /********************/
+
+  /********************
+    CTA-Section /
+  /********************/
+  .cta-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta--secondary--heading {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-text {
+    margin-bottom: 2.8rem;
+  }
+  /********************
+    CTA-Section End /
+  /********************/
+
+  /********************
+    The Footer-Section /
+  /********************/
+
+  /***************
+  Span-element pushes the elements through 
+  the whole width 
+  first row 2 elements x3 = 6 1fr
+  second row 3 elements x2 = 6fr*/
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+    grid-row: auto auto;
+  }
+
+  .logo-column,
+  .adress-column {
+    grid-column: span 3;
+  }
+
+  .nav-column {
+    grid-column: span 2;
+  }
+}
+
+/*************************
+  Smart-Phones
+  Below 545px 
+**************************/
+
+@media (max-width: 34em) {
+
+  /******************
+    Header-Section
+  **************** */
+  .header {
+    background-color: #fdf2e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem;
+    height: 9.6rem;
+    position: relative;
+  }
+  /******************
+    Header-Section End
+  **************** */
+  
+  /******************** 
+    Hero Section*/
+  /********************/
+  .hero-section {
+    padding: 0;
+  }
+
+  /*.hero-grid-left-side {
+    padding: 4rem 6rem 0rem 6rem;
+  } */
+
+  .flex-pictures-container {
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .flex-pictures img {
+    margin-right: -0.8rem;
+  }
+
+  .hero-grid-container {
+    gap: 1rem;
+    padding: 0rem 1rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 28.7%;
+    
+  }
+
+  .btn-2:link,
+  .btn-2:visited {
+    font-size: 1.7rem;
+    margin-left: 28.7%;
+    
+  }
+
+  .main-heading {
+    font-size: 3.6rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1.8rem;
+    padding: 0 2rem;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+  /******************** 
+  Hero Section Ends
+  /********************/
+
+  /******************** 
+    Featured-in Section
+  /********************/
+  .featured-in-section {
+    max-width: 120rem;
+    margin-top: 6rem;
+    text-align: center;
+  }
+  .featured-in-title {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+
+  .featured-in-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+  }
+  .flex-image-container {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem;
+  }
+  .featured-in-container img {
+    height: 1.4rem;
+  }
+
+  .logo-image-2 {
+    display: none;
+  }
+  /******************** 
+  Featured-in Section End
+  /********************/
+
+  
+  
+  /******************** 
+    Section How
+  /********************/
+  .section-how {
+    padding: 2rem 1rem;
+    max-width: 120rem;
+  }
+  .tertiary-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 0rem;
+  }
+
+  .sub-heading {
+    text-align: center;
+  }
+
+  .secondary-heading {
+    font-size: 3.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+  .container-grid--2--cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .grid-box-right:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .grid-box-right:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .box-number {
+    font-size: 6rem;
+  }
+
+  .app-screen-image {
+    width: 30%;
+  }
+
+  .grid-box-right::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 54%;
+    background-color: #555;
+    border-radius: 50%;
+    padding-bottom: 60%;
+    z-index: -2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .grid-box-right::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 40%;
+    background-color: #ff9c40a4;
+    border-radius: 50%;
+    padding-bottom: 50%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /******************** 
+    Section How End
+  /********************/
+
+  /******************** 
+    Meals Section
+    /********************/
+  .meals-section {
+    padding: 2rem 1rem;
+  }
+
+  .meal-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
+    gap: 1.5rem;
+  }
+
+  .meal-content {
+    padding: 0rem;
+  }
+
+  .meal-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .diet-list {
+    justify-self: center;
+    grid-column: 1 / 3;
+  }
+
+  .diet-tag {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+
+  .meal-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meal-list-flex {
+    justify-self: center;
+  }
+  /******************** 
+    Meals Section End
+  /********************/
+
+  /******************** 
+    Testimonials Section
+  /********************/
+  .testimonials-section {
+    padding: 0 1rem;
+    gap: 4rem;
+  }
+
+  .testimonial-author {
+    font-size: 1.6rem;
+    color: #777;
+    margin-bottom: 2rem;
+  }
+  /******************** 
+    Testimonials Section End
+  /********************/
+
+  /******************** 
+    Gallery  Section
+  /********************/
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    padding: 0rem;
+  }
+  /******************** 
+    Gallery  Section End
+  /********************/
+
+  /******************** 
+    Pricing Section
+  /********************/
+
+  .pricing-section {
+    padding: 0rem 1rem;
+    max-width: 120rem;
+    margin: 80px auto;
+  }
+  .pricing-container {
+    padding: 0rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .meal-list-pricing {
+    justify-self: center;
+  }
+  /******************** 
+    Pricing Section End
+  /********************/
+
+  /******************** 
+    Features Section
+  /********************/
+  .features-grid {
+    grid-template-columns: 1fr;
+    padding: 0 0;
+    gap: 2.5rem;
+  }
+  .figure-34em {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2rem;
+  }
+
+  /****************
+    CTA-SECTION */
+  /****************/
+  .cta-section {
+    padding: 0rem 1rem;
+  }
+  .cta-grid-34EM {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-image {
+    height: 48rem;
+    background-position: center;
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding: 2.8rem 4.4rem 6.8rem 4.4rem;
+  }
+
+  .cta--secondary--heading {
+    font-size: 3.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  /****************
+    Cta-Section End */
+  /****************/
+
+  /****************
+  The Footer-Section 
+  /****************/
+  .footer {
+    width: 100%;
+  }
+
+  .grid-footer {
+    gap: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /****************
+  The Footer-Section End
+  /****************/
+
+}
+
+/* Things to fix with omnifood tommorow (no need to take it down only re-upload the html code to netlify)
+- Hero section text is very wide need to fix the gaps
+-Straighten up the buttons, they seem to lean to the right 
+- Featured in section logos are to wide, not enough space in the view-port (overextending)
+- Features section, No waste section is breaking up into 5 lines and going outside the flow
+- The footer is also too wide, overextending 

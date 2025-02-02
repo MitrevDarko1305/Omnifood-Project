@@ -1,0 +1,423 @@
+/* 01---Typography
+
+      Spacing-System (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 /
+      128 
+      
+      Font-Weights - 
+      Default-700,400 
+      
+      Line-Height -
+      
+      Font-size system  (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /
+      52 / 62 / 74 / 86 / 98  
+
+      Font-size 
+      Default - 1.8rem, 1.6rem  (for small-text)
+      Used - 5.2rem 4.4rem 3rem (for large-text)
+      
+  02---Colors 
+  
+  -Primary #e67e22; #333;
+
+  -Tints  #fdf2e9; #fff;
+
+  -Shades #a15818; #cf711f; #45260a; 
+
+  -Accents
+
+  -Greys #555; #666; #777; #888; 
+  
+  3---Images/ Illustrations //
+  
+  4---Icons //  
+  
+  5---Shadows 
+  
+  6---Border-Radius 
+      Default - 1rem,
+  
+  7---White-Space
+  
+  HTML - FONT-SIZE 62.5% */
+
+/************************
+NAVIGATION-LIST + HEADER STARTS HERE */
+.header {
+  background-color: #fdf2e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4.8rem;
+  height: 9.6rem;
+  position: relative;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+  list-style: none;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.main-nav-link:active,
+.main-nav-link:hover {
+  color: #a15818;
+}
+.main-nav-link.link--5 {
+  background-color: #e67e22;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+.main-nav-link.link--5:hover {
+  background-color: #a15818;
+}
+
+/***************
+  Mobile-Navigation */
+
+.mobile-navigation {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-navigation-menu {
+  height: 3.4rem;
+  width: 3.4rem;
+  color: #555;
+  z-index: 9999;
+}
+
+.icon-mobile-navigation-close {
+  height: 3.4rem;
+  width: 3.4rem;
+  color: #555;
+  z-index: 9999;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* Sticky navigation */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fdf2e9;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  z-index: 999;
+  transition: top 0.5s ease-in-out; /* Smooth transition */
+}
+
+/****************************
+HERO-SECTION + CUSTOMER-SECTION STARTS HERE */
+.hero-section {
+  background-color: #fdf2e9;
+  max-width: 100%;
+  padding: 4rem;
+}
+
+.hero-grid-left-side {
+  width: 100%;
+}
+.hero-grid-right-side {
+  width: 100%;
+}
+.hero-grid-container {
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 8rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-pictures {
+  display: flex;
+}
+.flex-pictures img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fff;
+}
+.span-text {
+  font-size: 1.8rem;
+  color: #555;
+  font-weight: 400;
+  letter-spacing: 0.7;
+}
+.span-text span {
+  color: #e67e22;
+  font-weight: 700;
+}
+.flex-pictures-container {
+  display: flex;
+  align-items: center;
+  margin-top: 12rem;
+  gap: 3rem;
+}
+
+.hero-image {
+  width: 100%;
+}
+.main-heading {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+.hero-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
+  color: #555;
+}
+.btn:link,
+.btn:visited {
+  background-color: #e67e22;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+  transition: all 0.4s;
+  margin-top: 3rem;
+}
+.btn:active,
+.btn:hover {
+  background-color: #a15818;
+}
+.btn-2:link,
+.btn-2:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.6rem 3.2rem;
+  display: inline-block;
+  color: #333;
+  margin-left: 2rem;
+}
+/*****************************
+*******************************
+HERO + CUSTOMER SECTION ENDS HERE*/
+
+/*****************************
+FEATURED-IN-SECTION STARTS HERE */
+.featured-in-section {
+  max-width: 120rem;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.featured-in-title {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+.featured-in-container img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+.flex-image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/************************************
+************************************
+I STYLE HERE THE HOW IT WORKS SECTION */
+.container-grid--2--cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+.section-how {
+  max-width: 120rem;
+  margin: 80px auto;
+  padding: 4rem 8rem 4rem 8rem;
+}
+.sub-heading {
+  font-size: 1.6rem;
+  color: #e67e22;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+}
+.sub-heading.center-text {
+  text-align: center;
+}
+.secondary-heading {
+  font-size: 4.4rem;
+  color: #333;
+  margin-bottom: 5rem;
+}
+.secondary-heading.center-text {
+  text-align: center;
+}
+.app-screen-image {
+  width: 40%;
+}
+.box-number {
+  font-size: 8rem;
+  color: #666;
+}
+.tertiary-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.box-text-description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.grid-box-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.grid-box-right::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 65%;
+  background-color: #666;
+  border-radius: 50%;
+  padding-bottom: 65%;
+  z-index: -2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.grid-box-right::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50%;
+  background-color: #ff9c40a4;
+  border-radius: 50%;
+  padding-bottom: 50%;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/************************************
+************************************
+ HOW IT WORKS SECTION ENDS HERE */
+
+/*******************************
+ ****************************
+ I STYLE HERE THE MEALS-SECTION*/
+.meals-section {
+  max-width: 120rem;
+  margin: 80px auto;
+  padding: 4rem 8rem 4rem 8rem;
+}
+.meal-grid-container {
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  gap: 6rem;
+}
+.meal-image {
+  width: 100%;
+}
+.meal-card {
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.1707);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.meal-card:hover {
+  transform: translateY(-2rem);
+}
+.meal-tag {
+  font-size: 1rem;
+  background-color: #335408;
+  border-radius: 100px;
+  padding: 0.7rem 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.meal-tag.tag--1 {
+  background-color: #335408;
+  margin-right: 1px;
+}
+.meal-tag.tag--2 {
+  background-color: #d83838;
+}
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+strong {
+  font-weight: 500;
+}
+.meal-content {
+  padding: 3rem;
+}
+.meal-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.meal-list li {
+  font-size: 1.6rem;
+  color: #555;
+}
+.l-i {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.meal-icon {
+  color: #e67e22;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+.diet-tag {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+/*******************************
+ ****************************
+ THE MEALS SECTION ENDS HERE */
